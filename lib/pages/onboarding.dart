@@ -116,7 +116,7 @@ class _OnboardingState extends State<Onboarding> {
         ),
         Container(
           width: 325.w,
-          height: 40.h,
+          height: AppLayout.getHeight(GetPlatform.isAndroid == true ? 40.h : 5.h),
           margin: EdgeInsets.only(top: 100.h, left: 25.w, right: 25.w),
           decoration: const BoxDecoration(
             color: Colors.blue,
